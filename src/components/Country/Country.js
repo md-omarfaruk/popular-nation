@@ -15,10 +15,10 @@ const Country = (props) => {
     return (
         <div className = "country-style">
             <img src={flags.svg} style={flagStyle} alt="" />
-            <h5>Country Name: {name.common}</h5>
+            <h4>Country Name: {name.common}</h4>
             <p>Population: {population}</p>
             <p>Region: {region}</p>
-            <button onClick={() => handleAddedCountry(props.country)}>Add Country</button>
+            <button className="add-btn" onClick={() => handleAddedCountry(props.country)}>Add Country</button>
         </div>
     );
 };

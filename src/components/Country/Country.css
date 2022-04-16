@@ -1,5 +1,18 @@
 .country-style{
+    color: purple;
     border: 1px solid purple;
+    border-radius: 20px;
     margin: 20px;
     padding: 20px
+}
+.add-btn{
+    background-color: rgb(124, 245, 124);
+    padding: 5px 10px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.add-btn:hover{
+    color: white;
+    background-color: purple;
 }

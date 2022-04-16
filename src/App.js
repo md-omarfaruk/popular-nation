@@ -12,12 +12,12 @@ function App() {
   useEffect(()=>{
     fetch("https://restcountries.com/v3.1/all")
     .then(res => res.json())
-    .then(data => {setCountries(data); console.log(data)})
+    .then(data => setCountries(data))
     .catch(error => console.log(error));
   }, []);
 
   const handleAddedCountry = (country) => {
-    console.log("country added", country);
+    // console.log("country added", country);
     const newCountriesInfo = [...countriesInfo, country];
       setCountriesInfo(newCountriesInfo);
   }
